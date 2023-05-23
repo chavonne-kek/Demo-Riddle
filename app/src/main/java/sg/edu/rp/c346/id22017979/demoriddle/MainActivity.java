@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, AnswerActivity1.class);
                 intent.putExtra("Question","Q1");
+                intent.putExtra("answer", "Queue");
                 startActivity(intent);
             }
         });
@@ -33,8 +34,9 @@ public class MainActivity extends AppCompatActivity {
         btnRevealQ2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, AnswerActivity2.class);
+                Intent intent = new Intent(MainActivity.this, AnswerActivity1.class);
                 intent.putExtra("Question","Q2");
+                intent.putExtra("answer", "Gone");
                 startActivity(intent);
             }
         });
